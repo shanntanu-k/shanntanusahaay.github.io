@@ -1,0 +1,95 @@
+/* === CYBERPUNK THEME === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background: radial-gradient(circle at center, #0b0b0f, #060606);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(90deg, #ff8c00, #e100ff);
+  color: #fff;
+  padding: 40px 0;
+  text-shadow: 0 0 10px #ff8c00, 0 0 25px #e100ff;
+  border-bottom: 3px solid #ff00ff;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  animation: flicker 3s infinite alternate;
+}
+
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ff9ff3;
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff8c00;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+/* Flicker effect */
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 0 0 4px #ff8c00, 0 0 11px #ff8c00, 0 0 19px #e100ff;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+/* Cards */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.5), inset 0 0 10px rgba(255, 105, 180, 0.2);
+  width: 80%;
+  max-width: 800px;
+  border: 1px solid rgba(255, 105, 180, 0.4);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), inset 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+.tech-icons img {
+  width: 50px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.tech-icons img:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 10px #ff8c00);
+}
+
+.contact-links a {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff8c00, #e100ff);
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #ff8c00;
+}
+
+.contact-links a:hover {
+  box-shadow: 0 0 20px #e100ff;
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px;
+  color: #ff8c00;
+  text-shadow: 0 0 5px #ff00ff;
+}
